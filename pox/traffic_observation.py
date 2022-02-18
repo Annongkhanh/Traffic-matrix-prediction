@@ -80,10 +80,6 @@ class traffic_observation(object):
 
 def launch(output=None, interval = 30):
     log.info('Collecting data:')
-    if output is not None:
-        if not os.path.isfile(output):
-            with open(output, 'w') as f:
-                pass
     ob = core.registerNew(traffic_observation, output, interval)
     core.traffic_observation.tm_cal()
 
