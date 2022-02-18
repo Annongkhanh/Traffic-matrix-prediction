@@ -19,11 +19,13 @@ Jupyter Notebook files was created and running in Google Colab (https://colab.re
 To simulate these network, clone this git to POX folder:
 
 We run POX controller using this command:
+
     python2 pox.py openflow.spanning_tree --no-flood --hold-down openflow.discovery basic_forwarding traffic_observation  
 
 If you want to change the interval (default = 30 seconds) and save the measured traffic matrixes in a file, change the value of interval and add the path to the output in traffic_observation.py
 
 We run mininet simulation of Zamren topology by this command:
+
     sudo python2 Zamren
 
 
